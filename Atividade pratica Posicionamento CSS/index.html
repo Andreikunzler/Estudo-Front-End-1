@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento CSS</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+div  {
+    display: flex;
+}
+
+section {
+    width: 200px;
+    height: auto;
+    background-color: gray;
+    margin: 20px;
+}
+
+.tarefa01{
+    width: 100px;
+    height: auto;
+    background-color: gray;
+    margin: 20px;
+}
+
+.amarelo {
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    position: relative;
+    z-index: 10;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.verde {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: relative;
+    z-index: 9;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preto {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    z-index: 8;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vermelho {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    position: sticky;
+    z-index: 7;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.azul {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    position: relative;
+    z-index: 6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.a1{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+}
+
+.b2{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 180px;
+    margin-top: -40px;
+}
+
+.c3{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    margin-top: +40px;
+}
+
+.d4{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 180px;
+    margin-top: -40px;
+}
+
+.texto_geral{
+    width: auto;
+    height: auto;
+    background-color: gray;
+    padding: 1px;   
+}
+
+.formatação_texto_01{
+    color: white;
+    text-align: right;
+}
+
+.formatação_texto_02{
+    color: white;
+    text-align: justify;
+}
+
+.texto01{
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px;
+    margin: 14px;
+}
+
+.texto02{
+    padding: 10px;
+    margin: 14px;
+    max-height: 100px;
+    background-color: black;
+    overflow: auto;
+}
+
+.alinhar_quadrados{
+    width: 376px;
+    height: 208px;
+    background-color: gray;
+    margin: 20px;    
+}
+
+.e01{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+}
+
+.e02, .e03 {
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+    background-color: black;
+}
+
+.e04 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 62px;
+    margin-top: -124px;
+}
+
+.e05 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 62px;
+    margin-top: -82px;
+}
+
+.e06 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 104px;
+    margin-top: -124px;
+}
+
+.e07 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 356px;
+    margin-top: -40px;
+ 
+}
+
+.e08 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 356px;
+    margin-top: 2px;
+}
+
+.e09 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 356px;
+    margin-top: 44px;
+}
+
+.e10 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 314px;
+    margin-top: 2px;
+}
+
+.e11 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 314px;
+    margin-top: 44px;
+}
+
+.e12 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 272px;
+    margin-top: 44px;
+}
+    </style>
+</head>
+<body>
+    <section class="tarefa01">
+        <div class="azul">
+            <div class="vermelho">
+                <div class="preto">
+                    <div class="verde">
+                        <div class="amarelo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="a1"></div>
+        <div class="b2"></div>
+        <div class="c3"></div>
+        <div class="d4"></div>
+    </section>
+    <section class="texto_geral">
+        <div class="texto01">
+             <p class="formatação_texto_01">LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING ELIT DICTUMST MALESUADA SOCIOSQU ORNARE, ALIQUET LACINIA LECTUS PLATEA URNA IACULIS CONVALLIS CURABITUR LUCTUS ORCI, DIAM DIS PRAESENT PARTURIENT PURUS CONUBIA EGESTAS INTEGER DONEC RHONCUS. DIGNISSIM NON EROS LITORA MAURIS SOCIIS QUAM HIMENAEOS INCEPTOS CURSUS PULVINAR MONTES VARIUS, NATOQUE AT DUIS NASCETUR PRAESENT EU FACILISI SAPIEN APTENT ID. DIAM NULLAM DUI MALESUADA ODIO SOCIOSQU AUCTOR LECTUS POSUERE, FELIS MAURIS LEO TORTOR MAGNA CLASS MOLLIS SED PORTA, ETIAM DONEC ID TURPIS HENDRERIT NAM ULTRICES.</p>
+        </div>
+        <div class="texto02">
+            <p class="formatação_texto_02">Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst malesuada sociosqu ornare, aliquet lacinia lectus platea urna iaculis convallis curabitur luctus orci, diam dis praesent parturient purus conubia egestas integer donec rhoncus. Dignissim non eros litora mauris sociis quam himenaeos inceptos cursus pulvinar montes varius, natoque at duis nascetur praesent eu facilisi sapien aptent id. Diam nullam dui malesuada odio sociosqu auctor lectus posuere, felis mauris leo tortor magna class mollis sed porta, etiam donec id turpis hendrerit nam ultrices. Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst malesuada sociosqu ornare, aliquet lacinia lectus platea urna iaculis convallis curabitur luctus orci, diam dis praesent parturient purus conubia egestas integer donec rhoncus. Dignissim non eros litora mauris sociis quam himenaeos inceptos cursus pulvinar montes varius, natoque at duis nascetur praesent eu facilisi sapien aptent id. Diam nullam dui malesuada odio sociosqu auctor lectus posuere, felis mauris leo tortor magna class mollis sed porta, etiam donec id turpis hendrerit nam ultrices.</p>
+        </div>
+    </section>
+    <section class="alinhar_quadrados">
+        <div class="e01"></div>
+        <div class="e02"></div>
+        <div class="e03"></div>
+        <div class="e04"></div>
+        <div class="e05"></div>
+        <div class="e06"></div>
+        <div class="e07"></div>
+        <div class="e08"></div>
+        <div class="e09"></div>
+        <div class="e10"></div>
+        <div class="e11"></div>
+        <div class="e12"></div>
+    </section>
+</body>
+</html>
+
